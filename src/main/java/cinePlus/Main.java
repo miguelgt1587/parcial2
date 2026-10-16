@@ -112,10 +112,13 @@ public class Main extends JFrame {
 
     private JButton crearBoton(String texto, Runnable accion) {
         JButton btn = new JButton(texto);
-        btn.setFont(new Font("Segoe UI", Font.PLAIN, 14));
+        btn.setFont(new Font("Segoe UI", Font.BOLD, 14));
         btn.setFocusPainted(false);
-        btn.setBackground(new Color(60, 90, 160));
-        btn.setForeground(Color.WHITE);
+        btn.setContentAreaFilled(true);
+        btn.setOpaque(true);
+        btn.setBorderPainted(true);
+        btn.setBackground(new Color(40, 70, 140));
+        btn.setForeground(Color.BLACK);  // texto negro
         btn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         btn.addActionListener(e -> accion.run());
         return btn;
