@@ -1,5 +1,8 @@
 package cinePlus.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Sala {
 
     private int codigoSala;
@@ -7,6 +10,7 @@ public class Sala {
     private int capacidad;
     private char fila;
     private int columna;
+    private List<Pelicula>ListPeliculas;
 
     public Sala(int codigoSala, String nombreSala, int capacidad, char fila, int columna) {
         this.codigoSala=codigoSala;
@@ -14,6 +18,7 @@ public class Sala {
         this.capacidad=capacidad;
         this.fila=fila;
         this.columna=columna;
+        this.ListPeliculas=new ArrayList<>();
     }
 
     public int getCodigoSala() {

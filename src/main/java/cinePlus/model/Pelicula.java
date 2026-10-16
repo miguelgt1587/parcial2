@@ -1,5 +1,8 @@
 package cinePlus.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Pelicula {
 
     private int codigoPelicula;
@@ -7,6 +10,8 @@ public class Pelicula {
     private int duracion;
     private TipoGenero tipoGenero;
     private String clasificacionEdad;
+    private List<Sala> Listsalas;
+    private Funcion funcion;
 
 public Pelicula(int codigoPelicula, String titulo, int duracion, TipoGenero tipoGenero, String clasificacionEdad){
 
@@ -15,6 +20,8 @@ public Pelicula(int codigoPelicula, String titulo, int duracion, TipoGenero tipo
     this.duracion=duracion;
     this.tipoGenero=tipoGenero;
     this.clasificacionEdad=clasificacionEdad;
+    this.Listsalas=new ArrayList<>();
+    this.funcion=funcion;
 }
 
     public int getCodigoPelicula() {
